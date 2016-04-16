@@ -34,9 +34,9 @@ public class Main extends Script
             getInventory().interact("Eat", "Lobster");
         }
 
-        List<NPC> npcList = getNpcs().getAll();
-        npcList.remove("Rat");
-        final NPC TARGET = npcs.closest(getNpcs().getAll());
+        List<NPC> targets = getNpcs().getAll();
+        targets.remove("Rat");
+        final NPC TARGET = npcs.closest(targets);
 
         if (TARGET != null && !combat.isFighting())
         {

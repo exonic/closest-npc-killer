@@ -1,6 +1,7 @@
 package nodes;
 
 import core.Node;
+import data.Constants;
 import org.osbot.rs07.api.model.NPC;
 import org.osbot.rs07.script.Script;
 
@@ -26,7 +27,7 @@ public class Attack extends Node
     @Override
     public boolean execute() throws InterruptedException
     {
-        final NPC TARGET = s.npcs.closest(new String[] { "Minotaur", "Goblin" });
+        final NPC TARGET = s.npcs.closest(Constants.NPCS);
 
         if(TARGET != null)
         {

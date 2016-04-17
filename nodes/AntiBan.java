@@ -8,7 +8,6 @@ import org.osbot.rs07.utility.ConditionalSleep;
 
 public class AntiBan extends Node
 {
-
     private int random = 0;
 
     public AntiBan(Script s)
